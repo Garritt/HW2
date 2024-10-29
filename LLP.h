@@ -5,22 +5,6 @@
 #include <string>
 
 class phonebook {
-private:
-  // Node struct to represent each entry in the phonebook
-  struct entry {
-    std::string first_name;
-    std::string last_name;
-    std::string phone_number;
-    entry* next;
-    
-    // Constructor for easy entry creation
-    entry(const std::string& fn, const std::string& ln, const std::string& pn, entry* nxt = nullptr)
-      : first_name(fn), last_name(ln), phone_number(pn), next(nxt) {}
-  };
-  
-  entry* head;  // Pointer to the head of the linked list
-  entry* tail;  // Pointer to the tail of the linked list
-  
 public:
   // Constructor and Destructor
   phonebook();       // Default constructor
@@ -40,6 +24,19 @@ public:
 private:
   // Helper method to clean up nodes
   void clear();
+  struct entry {
+    std::string first_name;
+    std::string last_name;
+    std::string phone_number;
+    entry* next;
+    
+    // Constructor for easy entry creation
+    entry(const std::string& fn, const std::string& ln, const std::string& \
+	  pn, entry* nxt = nullptr)
+      : first_name(fn), last_name(ln), phone_number(pn), next(nxt) {}         };
+  
+  entry* head;  // Pointer to the head of the linked list
+  entry* tail;  // Pointer to the tail of the linked list
 };
 
 #endif // PHONEBOOK_H
