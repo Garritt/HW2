@@ -1,4 +1,13 @@
-// phonebook.cpp
+/**
+ * @file phonebook.cpp
+ * @author Garritt Baker
+ * @date 2024-10-30
+ * @brief cpp file for the Phonebook header file
+ * 
+ * 
+ */
+
+
 #include "phonebook.h"
 #include <iostream>
 #include <fstream>

@@ -1,4 +1,13 @@
-// main.cpp
+/**
+ * @file main.cpp
+ * @author Garritt Baker
+ * @date 2024-10-30
+ * @brief Create a Phonebook using a linked list by implementing a custom version of the linked list class that stores the data from a simple phone book.
+ * 
+ * 
+ */
+
+
 #include "phonebook.h"
 #include <iostream>
 #include <string>
